@@ -3,3 +3,9 @@
 ## Overview
 
 For more information, please visit http://willtheykillme.com
+
+## Components
+
+### Search Indexer
+
+### Brain
