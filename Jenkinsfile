@@ -9,6 +9,7 @@ node {
 
    // Get the maven tool.
    def mvnHome = tool 'mvn'
+   def dockerHome = tool 'docker'
 
    dir ('wtkm-searchindexer') {
 
@@ -29,15 +30,9 @@ node {
       stage 'archive wtkm-searchindexer'
       archive 'target/*.jar'
 
+      stage 'containerize wtkm-searchindexer'
+      sh "${dockerHome}/bin/docker ;"
+
    }
-}
 
-node {
-   stage 'deploy Canary'
-   sh 'echo "write your deploy code here"; sleep 5;'
-
-   stage 'deploy Production'
-   //input 'Proceed?'
-   sh 'echo "write your deploy code here"; sleep 6;'
-   archive 'target/*.jar'
 }
