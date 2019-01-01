@@ -14,7 +14,7 @@ public class BusApplication {
 
 	@GetMapping("/")
 	public String index() {
-		return "Hello WTKM bus!";
+		return "WTKM Bus and API version 3 of system";
 	}
 
 }

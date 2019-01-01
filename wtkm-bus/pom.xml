@@ -11,8 +11,9 @@
 	<groupId>com.wtkm</groupId>
 	<artifactId>bus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bus</name>
-	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
+	<name>demo</name>
+	<description>WTKM Spring Boot Bus and API</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -26,6 +27,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -36,6 +42,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>1.3.2</version>
+				<configuration>
+					<version>3</version>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
