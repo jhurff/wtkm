@@ -1,5 +1,8 @@
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+<<<<<<< HEAD
   <version>1</version>
+=======
+>>>>>>> 34d5eecc93d2ff3a04925c769231f152e5fd9d73
   <threadsafe>true</threadsafe>
   <runtime>java8</runtime>
 </appengine-web-app>
